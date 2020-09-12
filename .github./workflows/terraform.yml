@@ -1,0 +1,6 @@
+name: "Terraform
+on:
+  pull_request:
+  push:
+     branches:
+       - terraform/ResourceGroup
