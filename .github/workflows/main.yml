@@ -39,11 +39,13 @@ jobs:
       - name: 'Terraform init'
         uses: hashicorp/terraform-github-actions@master
         with:
+          tf_actions_version: 0.13.2
           tf_actions_subcommand: "init"
       
       - name: 'Terraform Validate'
         uses: hashicorp/terraform-github-actions@master
         with:
+          tf_actions_version: 0.13.2
           tf_actions_subcommand: 'validate'
        
       - name: 'Terraform Plan'
