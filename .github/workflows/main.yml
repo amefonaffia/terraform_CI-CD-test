@@ -50,8 +50,8 @@ jobs:
       
       - name: 'Static Checks'
         run: |
-          pip install checkov
-          checkov -d /terraform_CI-CD-test      
+          docker pull bridgecrew/checkov
+          docker run -t -v /terraform_CI-CD-test/tf:/tf bridgecrew/checkov -d /.      
       
       - name: 'Terraform Plan'
         uses: hashicorp/terraform-github-actions@master
