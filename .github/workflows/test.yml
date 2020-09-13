@@ -23,5 +23,5 @@ jobs:
       - name: 'Static Checks'
         run: |
           docker pull bridgecrew/checkov
-          pwd
-          docker run -t -v /terraform_CI-CD-test/tf:/tf bridgecrew/checkov -d /$(pwd)  
+          PWD=`pwd`
+          docker run -t -v /terraform_CI-CD-test/tf:/tf bridgecrew/checkov -d $PWD  
