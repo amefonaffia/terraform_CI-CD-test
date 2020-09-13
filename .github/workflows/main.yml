@@ -50,7 +50,7 @@ jobs:
       
       - name: 'Static Checks'
         run: |
-          pip install checkov,
+          pip install checkov
           checkov -d /terraform_CI-CD-test      
       
       - name: 'Terraform Plan'
