@@ -20,7 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: 'Static Checks with Checkov'
+      - name: 'Static Checks using Checkov'
         run: |
           pip3 install --upgrade pip && pip3 install --upgrade setuptools
           pip3 install checkov
