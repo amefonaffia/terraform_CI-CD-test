@@ -22,6 +22,6 @@ jobs:
     steps:
       - name: 'Static Checks'
         run: |
-          pip install checkov
+          sudo pip3 install checkov
           pwd
           checkov -d $(pwd)  
