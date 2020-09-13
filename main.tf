@@ -11,7 +11,7 @@ module "instances" {
     sec_groups = [module.sgroup.security_groups.name]
     ami = "ami-0cd230f950c3de5d8"
     instance_type = "t2.micro"
-    webserver_name = "Amefon"
+    webserver_name = "Amefon's"
 }
 
 module "eip" {
