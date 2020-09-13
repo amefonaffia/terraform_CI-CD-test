@@ -1,3 +1,3 @@
 # Terraform test CI/CD with Git Actions
 
-Test
+Test 2
