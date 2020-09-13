@@ -24,4 +24,5 @@ jobs:
         run: |
           docker pull bridgecrew/checkov
           PWD=`pwd`
+          pwd
           docker run -t -v /terraform_CI-CD-test/tf:/tf bridgecrew/checkov -d $PWD  
